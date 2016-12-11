@@ -1,6 +1,7 @@
 <section>
   <div class="page-header">
-    <h1 data-ng-bind="vm.code.name"></h1>
+    <p data-ng-bind="vm.code.name"></p>
+    <div hljs source="vm.code.code"></div>
   </div>
   <div class="pull-right"
        data-ng-show="vm.code.isCurrentUserOwner">
@@ -22,5 +23,4 @@
       <span data-ng-if="!vm.code.user">Deleted User</span>
     </em>
   </small>
-  <pre class="lead" data-ng-bind="vm.code.code"><code></code></pre>
 </section>
